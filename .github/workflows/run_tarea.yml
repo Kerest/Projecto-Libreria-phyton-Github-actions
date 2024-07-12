@@ -23,7 +23,7 @@ jobs:
       run: pip install -r requirements.txt
 
     -name: Run
-     run: pytest test_main.py
+     run: python -m unittest discover -s tests 
 
     -name:
      run: python -c "print('Compilacion correcta')
